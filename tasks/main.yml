@@ -1,2 +1,6 @@
 ---
 # tasks file for roles/my-first-public-role
+- hosts: node1.otdemo.com
+  tasks:
+   - name: Installation of elinks package
+     yum: name=elinks state=latest
